@@ -1,11 +1,53 @@
 import React from 'react';
 import './footer.scss'
+import face_book from '../../img/face_book.png'
+import instagram from '../../img/instagram.png'
+import tviter from '../../img/Twitter.png'
+import age_limit from '../../img/age-limit.png'
 
 const Footer = () => {
     return (
-        <div>
-            footer
-        </div>
+        <section className='footer'>
+            <div className="container">
+                <div className="footer__top">
+                    <div className="footer__nav">
+                        <ul>
+                            <li>О компании</li>
+                            <li>Вопрос-Ответ</li>
+                            <li>Новости</li>
+                            <li>Контакты</li>
+                            <li>Пополнение баланса</li>
+                        </ul>
+                    </div>
+                    <div className="footer__contact">
+                        <p>Бесплатно по Казахстану</p>
+                        <h2>8 800 080 50 11</h2>
+                        <h2>8 727 225 50 11</h2>
+                    </div>
+                </div>
+                <div className="footer__line"></div>
+                <div className="footer__bottom">
+                    <div className="footer__nav_bottom">
+                        <div className="footer__nav_li">
+                            <ul>
+                                <li>2019 © Convex</li>
+                                <li>Политика конфиденциальности</li>
+                                <li>Публичная оферта</li>
+                                <li>Условия возврата</li>
+                            </ul>
+                        </div>
+                        <div className="footer__social_network">
+                            <img src={face_book} alt=""/>
+                            <img src={instagram} alt=""/>
+                            <img src={tviter} alt=""/>
+                        </div>
+                    </div>
+                    <div className="footer__restrictions">
+                        <img src={age_limit} alt=""/>
+                    </div>
+                </div>
+            </div>
+        </section>
     );
 };
 

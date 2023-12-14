@@ -44,6 +44,7 @@
     align-items: center;
     column-gap: 20px;
     button{
+      background: #FFF;
       color: #000;
       font-size: 16px;
       font-style: normal;
@@ -81,4 +82,71 @@
     background: #F0F0F0;
     margin: 25px 0;
   }
+  &__nav{
+    ul{
+      display: flex;
+      column-gap: 30px;
+    }
+    li{
+      display: flex;
+      align-items: center;
+      column-gap: 4px;
+      color: #303030;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    li:last-child{
+      color: var(--main-color-green, #46C578);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+  &__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__basket{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    width: 160px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #46C578;
+    button{
+      width: 34px;
+      height: 34px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      background: #74D69A;
+      color: #FFF;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      border: none;
+    }
+    h4{
+      color: #FFF;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    p{
+      color: rgba(255, 255, 255, 0.65);
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
 }
