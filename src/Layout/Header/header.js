@@ -1,13 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './header.scss'
 import logo from '../../img/logo.png'
 import local__img from '../../img/Location.png'
 import lishki from '../../img/arrow_to_down.png'
 import green_li from '../../img/chevron_down.png'
 import basket from '../../img/basket.png'
+import search from './Search.svg'
 
 
 const Header = () => {
+    const [logosearch,setLogosearch] = useState('')
+
     return (
         <section className='header'>
             <div className="container">
@@ -20,7 +23,11 @@ const Header = () => {
                         </div>
                     </div>
                     <div className="header__center">
-                        <input type="text" placeholder='поиск товаров'/>
+                        <input onChange={(e)=>setLogosearch(e.target.value)} type="text" placeholder='поиск товаров'/>
+                        {
+                            logosearch === ''? <img className='header__logo' src={search} alt=""/>:''
+                        }
+
                     </div>
                     <div className="header__right">
                         <div className="header__local">

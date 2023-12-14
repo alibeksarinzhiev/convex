@@ -129,37 +129,9 @@
     display: flex;
     padding-top: 60px;
     column-gap: 60px;
+    flex-wrap: wrap;
   }
-  &__cart{
-    width: 250px;
-    height: 386px;
-    img{
-      width: 250px;
-      height: 180px;
-    }
-    h4{
-      color: #000;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-    }
-    h3{
-      color: #46C578;
-      font-size: 15px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 125%;
-      padding-top: 10px;
-    }
-    p{
-      color: var(--text-color-title, #303030);
-      font-size: 15px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 125%;
-    }
-  }
+
   &__coin{
     display: flex;
     justify-content: space-between;
