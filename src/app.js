@@ -4,6 +4,8 @@ import './app.scss'
 import Layout from "./Layout/layout";
 import Home from "./pages/home/home";
 import Search from "./pages/Search/Search";
+import About from "./pages/About/About";
+import Faq from "./pages/FAQ/faq";
 
 const App = () => {
     return (
@@ -12,6 +14,8 @@ const App = () => {
              <Route path={'/'} element={<Layout/>}>
              <Route path={''} element={<Home/>}/>
              <Route path={'/search'} element={<Search/>}/>
+             <Route path={'/about'} element={<About/>}/>
+             <Route path={'/faq'} element={<Faq/>}/>
              </Route>
          </Routes>
         </>
