@@ -6,6 +6,11 @@
     margin-top: 20px;
 
   }
+  &__logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
   &__left{
     display: flex;
     align-items: center;
@@ -26,6 +31,7 @@
     }
   }
   &__center{
+    position: relative;
     input{
       display: flex;
       width: 380px;
@@ -37,6 +43,7 @@
       border-radius: 31px;
       background: #F4F5FA;
       border: none ;
+
     }
   }
   &__right{

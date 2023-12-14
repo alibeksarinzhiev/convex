@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Convex.iml" filepath="$PROJECT_DIR$/.idea/Convex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/convex.iml" filepath="$PROJECT_DIR$/.idea/convex.iml" />
     </modules>
   </component>
 </project>
