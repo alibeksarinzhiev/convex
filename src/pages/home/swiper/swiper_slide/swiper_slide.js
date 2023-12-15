@@ -2,7 +2,7 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
-import Slaide1 from "./slaide1/slaide1";
+import Slide1 from "./slide1/slide1";
 
 
 import 'swiper/css'
@@ -13,24 +13,17 @@ const SwiperSlider = () => {
     return (
         <Swiper
             spaceBetween={50}
-            slidesPerView={2}
+            slidesPerView={1}
             loop={true}
             navigation={true}
             modules={[Navigation]}
         >
             <SwiperSlide>
-               <Slaide1/>
+               <Slide1/>
             </SwiperSlide>
             <SwiperSlide>
-
+                <Slide1/>
             </SwiperSlide>
-            <SwiperSlide>
-
-            </SwiperSlide>
-            <SwiperSlide>
-
-            </SwiperSlide>
-
         </Swiper>
     );
 };
