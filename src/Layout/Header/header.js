@@ -6,6 +6,7 @@ import lishki from '../../img/arrow_to_down.png'
 import green_li from '../../img/chevron_down.png'
 import basket from '../../img/basket.png'
 import search from './Search.svg'
+import {Link} from "react-router-dom"
 
 
 const Header = () => {
@@ -16,7 +17,7 @@ const Header = () => {
             <div className="container">
                 <div className="header__top">
                     <div className="header__left">
-                        <img src={logo} alt=""/>
+                        <Link to='/'><img src={logo} alt=""/></Link>
                         <div className="header__call">
                             <p>Бесплатный звонок</p>
                             <h2>8 800 080 5011</h2>
@@ -39,7 +40,7 @@ const Header = () => {
                                 <h3>Нур-Султан</h3>
                             </div>
                         </div>
-                        <button>Войти</button>
+                        <Link to='/sign'><button>Войти</button></Link>
                     </div>
                 </div>
                 <div className="header__line"></div>

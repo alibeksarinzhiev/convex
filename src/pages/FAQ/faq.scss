@@ -20,6 +20,9 @@
       padding-top: 25px;
       width: 230px;
     }
+    h3:hover{
+      color: var(--Main-Color-Green, #46C578);
+    }
     button{
       display: inline-flex;
       width: 260px;
@@ -40,6 +43,7 @@
   }
   &__right{
     padding-left: 80px;
+    padding-bottom: 100px;
   }
   &__question{
     display: flex;

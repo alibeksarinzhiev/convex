@@ -70,40 +70,10 @@ const Search = () => {
                       <Cart/>
                     </div>
                     <div className="search__stroka">
-                    <div className="search__cart">
-                        <img src={img} alt=""/>
-                        <h4>Конина тушеная Улан, есть
-                            возможность в 2 строки</h4>
-                        <h3>В наличии: 11 шт.</h3>
-                        <p>Вес: 130гр</p>
-                        <div className="search__coin">
-                            <p>500 сом</p>
-                            <button>В корзину</button>
-                        </div>
+                        <Cart/>
+                        <Cart/>
+                        <Cart/>
                     </div>
-                    <div className="search__cart">
-                        <img src={img} alt=""/>
-                        <h4>Конина тушеная Улан, есть
-                            возможность в 2 строки</h4>
-                        <h3>В наличии: 11 шт.</h3>
-                        <p>Вес: 130гр</p>
-                        <div className="search__coin">
-                            <p>500 сом</p>
-                            <button>В корзину</button>
-                        </div>
-                    </div>
-                    <div className="search__cart">
-                        <img src={img} alt=""/>
-                        <h4>Конина тушеная Улан, есть
-                            возможность в 2 строки</h4>
-                        <h3>В наличии: 11 шт.</h3>
-                        <p>Вес: 130гр</p>
-                        <div className="search__coin">
-                            <p>500 сом</p>
-                            <button>В корзину</button>
-                        </div>
-                    </div>
-                </div>
                 </div>
                 </div>
             </div>

@@ -4,6 +4,8 @@ import face_book from '../../img/face_book.png'
 import instagram from '../../img/instagram.png'
 import tviter from '../../img/Twitter.png'
 import age_limit from '../../img/age-limit.png'
+import {Link} from "react-router-dom"
+
 
 const Footer = () => {
     return (
@@ -12,11 +14,11 @@ const Footer = () => {
                 <div className="footer__top">
                     <div className="footer__nav">
                         <ul>
-                            <li>О компании</li>
-                            <li>Вопрос-Ответ</li>
-                            <li>Новости</li>
-                            <li>Контакты</li>
-                            <li>Пополнение баланса</li>
+                            <Link to='/about'>О компании</Link>
+                            <Link to='/faq'>Вопрос-Ответ</Link>
+                            <Link to='/news'>Новости</Link>
+                            <Link to='/contacts'>Контакты</Link>
+                            <Link to='/balance'>Пополнение баланса</Link>
                         </ul>
                     </div>
                     <div className="footer__contact">
