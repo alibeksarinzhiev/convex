@@ -11,6 +11,7 @@ const Footer = () => {
     return (
         <section className='footer'>
             <div className="container">
+                <div className="footer__line1"></div>
                 <div className="footer__top">
                     <div className="footer__nav">
                         <ul>

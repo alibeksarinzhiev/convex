@@ -1,0 +1,66 @@
+.slides{
+  margin-top: 20px;
+
+  &__tovar{
+    display: flex;
+    justify-content: space-between;
+  }
+  h2{
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  p{
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &__dishes{
+    padding: 15px 0 30px 20px;
+    width: 380px;
+    height: 260px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: linear-gradient(175deg, #FA6A6A -9.92%, #E43F3F 96.25%);
+    img{
+      margin-bottom: 18px;
+    }
+  }
+  &__newItems{
+    padding: 9px 0 30px 20px;
+    width: 249px;
+    height: 260px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: linear-gradient(171deg, #A8CBFF -6.86%, #7BB0FF 93.34%);
+    img{
+      margin-left: 6px;
+    }
+  }
+  &__stock{
+    padding: 25px 0 30px 20px;
+    width: 250px;
+    height: 260px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: linear-gradient(166deg, #BBB0FF -21.04%, #8470FF 90.17%);
+    img{
+      margin: 0 0 29px 36px;
+    }
+  }
+  &__kits{
+    padding: 0 0 10px 20px;
+    width: 249px;
+    height: 260px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #FFD37D -7.02%, #FDC352 99.91%);
+    img{
+      margin: 0 0 -29px -34px;
+    }
+  }
+}

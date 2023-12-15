@@ -1,0 +1,25 @@
+.swiper-button-prev, .swiper-button-next{
+  z-index: 10;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+  content: ''!important;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 130%;
+  transform: translate(-50%,-50%);
+  width: 40px;
+  height: 40px;
+  background: url("next.png")center/cover no-repeat;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+  content: ''!important;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: -29%;
+  transform: translate(-50%,-50%);
+  width: 40px;
+  height: 40px;
+  background: url("prev.png")center/cover no-repeat;
+}

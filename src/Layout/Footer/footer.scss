@@ -1,8 +1,17 @@
 .footer{
-  a{
+
+  a {
     text-decoration: none;
     color: black;
     font-size: 22px;
+  }
+  &__line1{
+    width: 1200px;
+    height: 1px;
+    opacity: 0.38;
+    background: #A7AED2;
+    margin: 80px 0 40px 0;
+
   }
   &__top{
     display: flex;
