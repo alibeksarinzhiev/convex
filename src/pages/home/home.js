@@ -1,5 +1,4 @@
 import React from 'react';
-import './home.scss'
 import Swiper from './swiper/swiper'
 import Slides from "./swiper/slides/slides";
 import Action from "./action/action";
