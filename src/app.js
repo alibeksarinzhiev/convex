@@ -17,7 +17,6 @@ const App = () => {
         <>
          <Routes>
              <Route path={'/'} element={<Layout/>}>
-<<<<<<< HEAD
              <Route path={''} element={<Home/>}/>
              <Route path={'/search'} element={<Search/>}/>
              <Route path={'/about'} element={<About/>}/>
@@ -26,12 +25,10 @@ const App = () => {
              <Route path={'/details'} element={<Details/>}/>
              <Route path={'/contacts'} element={<Contacts/>}/>
              <Route path={'/balance'} element={<Balance/>}/>
-=======
                  <Route path={''} element={<Home/>}/>
                  <Route path={'/search'} element={<Search/>}/>
                  <Route path={'/about'} element={<About/>}/>
                  <Route path={'/faq'} element={<Faq/>}/>
->>>>>>> b997e725eaa492eb6177f6f5488378874d7a488d
              </Route>
              <Route path={'/sign'} element={<Sign/>}/>
          </Routes>
