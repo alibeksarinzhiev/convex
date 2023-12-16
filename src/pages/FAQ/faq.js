@@ -1,5 +1,11 @@
 import React from 'react';
 import './faq.scss'
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import drop from '../../img/arrow_to_down.png'
+
 
 const Faq = () => {
     return (
@@ -61,6 +67,21 @@ const Faq = () => {
                         <div className="faq__line"></div>
                     </div>
                 </div>
+                <Accordion>
+                    <AccordionSummary
+                        expandIcon={<img src={drop} alt=""/>}
+                        aria-controls="panel1a-content"
+                        id="panel1a-header"
+                    >
+                        <Typography>Accordion 1</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <Typography>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                            malesuada lacus ex, sit amet blandit leo lobortis eget.
+                        </Typography>
+                    </AccordionDetails>
+                </Accordion>
             </div>
         </section>
     );

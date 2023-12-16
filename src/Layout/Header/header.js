@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './header.scss'
 import logo from '../../img/logo.png'
 import local__img from '../../img/Location.png'
@@ -11,9 +11,19 @@ import {Link} from "react-router-dom"
 
 const Header = () => {
     const [logosearch,setLogosearch] = useState('')
+   let [scr,setScr] = useState(false)
+
+useEffect(()=>{
+if(typeof window!=='undefined'){
+window.addEventListener('scroll',()=>{
+setScr(window.pageYOffset>150)
+})
+}
+},[])
+
 
     return (
-        <section className='header'>
+        <header className={`${scr?'header scrolled':'header'}`} >
             <div className="container">
                 <div className="header__top">
                     <div className="header__left">
@@ -66,7 +76,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </header>
     );
 };
 

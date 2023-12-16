@@ -5,9 +5,18 @@ import instagram from '../../img/instagram.png'
 import tviter from '../../img/Twitter.png'
 import age_limit from '../../img/age-limit.png'
 import {Link} from "react-router-dom"
+import {animateScroll} from 'react-scroll'
 
 
 const Footer = () => {
+
+    const toTop = () => {
+        animateScroll.scrollToTop({
+            delay: 0,
+            duration: 0,
+            smooth:true
+        })
+    };
     return (
         <section className='footer'>
             <div className="container">
@@ -15,7 +24,7 @@ const Footer = () => {
                 <div className="footer__top">
                     <div className="footer__nav">
                         <ul>
-                            <Link to='/about'>О компании</Link>
+                            <Link onClick={()=>toTop()} to='/about'>О компании</Link>
                             <Link to='/faq'>Вопрос-Ответ</Link>
                             <Link to='/news'>Новости</Link>
                             <Link to='/contacts'>Контакты</Link>
