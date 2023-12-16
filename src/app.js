@@ -19,15 +19,15 @@ const App = () => {
         <>
          <Routes>
              <Route path={'/'} element={<Layout/>}>
-             <Route path={''} element={<Home/>}/>
-             <Route path={'/search'} element={<Search/>}/>
-             <Route path={'/about'} element={<About/>}/>
-             <Route path={'/faq'} element={<Faq/>}/>
-             <Route path={'/news'} element={<News/>}/>
-             <Route path={'/details'} element={<Details/>}/>
-             <Route path={'/contacts'} element={<Contacts/>}/>
-             <Route path={'/balance'} element={<Balance/>}/>
-             <Route path={'/product'} element={<Product/>}/>
+                 <Route path={''} element={<Home/>}/>
+                 <Route path={'/search'} element={<Search/>}/>
+                 <Route path={'/about'} element={<About/>}/>
+                 <Route path={'/faq'} element={<Faq/>}/>
+                 <Route path={'/news'} element={<News/>}/>
+                 <Route path={'/details'} element={<Details/>}/>
+                 <Route path={'/contacts'} element={<Contacts/>}/>
+                 <Route path={'/balance'} element={<Balance/>}/>
+                 <Route path={'/product'} element={<Product/>}/>
                  <Route path={''} element={<Home/>}/>
                  <Route path={'/search'} element={<Search/>}/>
                  <Route path={'/about'} element={<About/>}/>

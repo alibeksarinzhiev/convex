@@ -1,6 +1,7 @@
 import React from 'react';
 import img from '../../img/notfoundimg.png'
 import './notfound.scss'
+import {Link} from "react-router-dom"
 
 
 const Notfound = () => {
@@ -15,9 +16,9 @@ const Notfound = () => {
                         <h3>
                             Мы не можем найти страницу, которую вы ищете
                         </h3>
-                        <button>
+                        <Link to='/'> <button>
                             Вернуться на главную
-                        </button>
+                        </button></Link>
                     </div>
                     <div>
                         <img src={img} alt=""/>
