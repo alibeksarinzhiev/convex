@@ -25,7 +25,7 @@ const Product = () => {
                             <p>Товар доступен:</p>
                             <h6> 11 шт.</h6>
                         </div>
-                        <button>
+                        <button className='product__VBaskec'>
                             В корзину
                         </button>
                         <p className="aboutproduct">
