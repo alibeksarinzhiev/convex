@@ -13,6 +13,7 @@ const Action = () => {
                 </div>
                 <div className="action__cartSwiper">
                     <SwiperAction1/>
+
                 </div>
             </div>
         </section>
