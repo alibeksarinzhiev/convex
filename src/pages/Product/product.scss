@@ -1,0 +1,103 @@
+.way{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #A7AED2;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.tusha{
+  display: flex;
+  column-gap: 50px;
+}
+.about h2{
+  color: #000;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 15px;
+}
+.h2o{
+  display: flex;
+}
+.h2o h3{
+  color: #C54646;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.h2o h4{
+  color: #E2E2E2;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: line-through;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+.weight{
+  display: flex;
+  column-gap: 10px;
+  padding-top: 35px;
+  padding-bottom: 5px;
+}
+.weight h5{
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.weight h6{
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+}
+.quantity{
+  display: flex;
+}
+.quantity p{
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.quantity h6{
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+button{
+  border-radius: 10px;
+  border: 1.5px solid #46C578;
+  background: #46C578;
+  width: 150px;
+  height: 50px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.aboutproduct{
+  color: #000;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%; /* 22.5px */
+  width: 480px;
+  margin-top: 30px;
+}

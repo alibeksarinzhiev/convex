@@ -11,6 +11,8 @@ import Details from "./pages/News/details/details";
 import Contacts from "./pages/Contacts/contacts";
 import Balance from "./pages/Balance/balance";
 import Sign from "./pages/Sign in/sign";
+import Product from "./pages/Product/product";
+import Notfound from "./pages/notfound/notfound";
 
 const App = () => {
     return (
@@ -25,12 +27,14 @@ const App = () => {
              <Route path={'/details'} element={<Details/>}/>
              <Route path={'/contacts'} element={<Contacts/>}/>
              <Route path={'/balance'} element={<Balance/>}/>
+             <Route path={'/product'} element={<Product/>}/>
                  <Route path={''} element={<Home/>}/>
                  <Route path={'/search'} element={<Search/>}/>
                  <Route path={'/about'} element={<About/>}/>
                  <Route path={'/faq'} element={<Faq/>}/>
              </Route>
              <Route path={'/sign'} element={<Sign/>}/>
+             <Route path={'*'} element={<Notfound/>}/>
          </Routes>
         </>
     );
