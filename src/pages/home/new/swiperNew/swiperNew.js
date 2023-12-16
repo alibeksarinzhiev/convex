@@ -19,7 +19,6 @@ export default function SwiperNew() {
             <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
                 <SwiperSlide><Cart/><Cart/><Cart/><Cart/></SwiperSlide>
                 <SwiperSlide><Cart/><Cart/><Cart/><Cart/></SwiperSlide>
-                <SwiperSlide><Cart/><Cart/><Cart/><Cart/></SwiperSlide>
                 <SwiperSlide><Cart/><Cart/><Cart/><CartViewAll/></SwiperSlide>
             </Swiper>
         </>

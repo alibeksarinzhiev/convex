@@ -21,12 +21,33 @@
       line-height: 125%;
       padding-top: 10px;
     }
-    p{
-      color: var(--text-color-title, #303030);
-      font-size: 15px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 125%;
-    }
+  }
+  &__bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 37px;
+  }
+  &__price{
+    color: #FF3D3D;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  &__button{
+    margin-bottom: 27px;
+    width: 128px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1.5px solid #46C578;
+    background: #46C578;
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 }
