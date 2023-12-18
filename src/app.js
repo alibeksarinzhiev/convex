@@ -13,6 +13,8 @@ import Balance from "./pages/Balance/balance";
 import Sign from "./pages/Sign in/sign";
 import Product from "./pages/Product/product";
 import Notfound from "./pages/notfound/notfound";
+import Register from "./pages/Register/register";
+
 
 const App = () => {
 
@@ -36,6 +38,7 @@ const App = () => {
              </Route>
              <Route path={'/sign'} element={<Sign/>}/>
              <Route path={'*'} element={<Notfound/>}/>
+             <Route path={'/register'} element={<Register/>}/>
          </Routes>
         </>
     );

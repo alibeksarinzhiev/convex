@@ -1,0 +1,134 @@
+.image {
+    margin-top: 50px;
+    display: flex;
+    column-gap: 900px;
+    justify-content: space-between;
+    align-items: center;
+}
+.reg__one {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.reg__one h4 {
+    color: #303030;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+
+.reg__one img {
+    width: 24px;
+    height: 24px;
+}
+.contacts__login h3{
+    color: #303030;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 20px;
+}
+.contacts__login input{
+    width: 480px;
+    height: 50px;
+    flex-shrink: 0;
+    color: #A7AED2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--Text-color-Captions, #A7AED2);
+}
+
+
+
+
+.reg__three {
+    display: flex;
+    align-items: center;
+    padding-top: 146px;
+    flex-direction: column;
+}
+.reg__fore h1 {
+    text-align: center;
+    color: #000;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    margin-bottom: 20px;
+}
+
+.reg__fore h4 {
+    color: #303030;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 30px;
+}
+
+.reg__fore input {
+    width: 380px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid var(--Text-color-Captions, #A7AED2);
+    color: #A7AED2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+    margin-top: 15px;
+    padding-left: 5px;
+}
+
+.reg__seven{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     column-gap: 130px;
+     padding-top: 18px;
+}
+.reg__five input{
+    width: 380px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid var(--Text-color-Captions, #A7AED2);
+    color: #A7AED2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+    margin-top: 15px;
+    padding-left: 5px;
+}
+.reg__five p{
+    margin-top: 15px;
+    font-size: 17px;
+}
+.reg__eight
+button1{
+    display: flex;
+    width: 380px;
+    height: 50px;
+    padding: 14px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1.5px solid #46C578;
+    background: #46C578;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
