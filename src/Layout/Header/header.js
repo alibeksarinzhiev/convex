@@ -12,6 +12,9 @@ import {Link} from "react-router-dom"
 const Header = () => {
     const [logosearch,setLogosearch] = useState('')
     let [scr,setScr] = useState(false)
+    const [hover,setHover] = useState(false)
+
+
 
 
     useEffect(()=>{
@@ -60,8 +63,24 @@ const Header = () => {
                 <div className="header__bottom">
                     <div className="header__nav">
                         <ul>
-                            <li>Продукты <img src={lishki} alt=""/></li>
-                            <li>Еда быстрого приготовления <img src={lishki} alt=""/></li>
+                            <li className='dropdown'>
+                                <span>Продукты <img src={lishki} alt=""/></span>
+                                <div className="dropdown__content">
+                                    <a href="">Овощи и фрукты</a>
+                                    <a href="">Молочные продукты</a>
+                                    <a href="">Бакалея</a>
+                                </div>
+                            </li>
+                            <li className='dropdown'>
+                                <span>
+                                        Еда быстрого приготовления <img src={lishki} alt=""/>
+                                     </span>
+                                <div className="dropdown__content">
+                                    <a href="">Овощи и фрукты</a>
+                                    <a href="">Молочные продукты</a>
+                                    <a href="">Бакалея</a>
+                                </div>
+                            </li>
                             <li>Консервы <img src={lishki} alt=""/></li>
                             <li>Напитки <img src={lishki} alt=""/></li>
                             <li>Бытовая химия <img src={lishki} alt=""/></li>

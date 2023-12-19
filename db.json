@@ -1,3 +1,15 @@
-[
-
-]
+{
+  "product": [
+    {
+      "id": 1,
+      "title": "",
+      "description": "",
+      "price": 100,
+      "category": "",
+      "size": "",
+      "new": "false",
+      "quantity": 10,
+      "image": ""
+    }
+  ]
+}
