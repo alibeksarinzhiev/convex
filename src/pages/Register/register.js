@@ -40,7 +40,9 @@ const Register = () => {
                        </div>
                        <div className="sign__but">
                            <div className="reg__eight">
-                               <button1>Войти</button1>
+                               <Link  to='/sign'>
+                                   <button1>Войти</button1>
+                               </Link>
                            </div>
                        </div>
                    </div>

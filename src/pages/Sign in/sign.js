@@ -38,7 +38,9 @@ const Sign = () => {
                         <div className="sign__voi">
                             <button1>Войти</button1>
                             <p>или</p>
-                            <button2>Зарегистрироваться</button2>
+                            <Link  to='/register'>
+                                <button2 >Зарегистрироваться</button2>
+                            </Link>
                         </div>
                     </div>
 

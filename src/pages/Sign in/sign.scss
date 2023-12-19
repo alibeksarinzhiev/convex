@@ -21,6 +21,10 @@
   }
 }
 .sign{
+  a{
+    text-decoration: none;
+    list-style: none;
+  }
   &__dis{
     display: flex;
     align-items: center;

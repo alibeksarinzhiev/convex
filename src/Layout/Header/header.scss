@@ -1,14 +1,13 @@
 .header{
   width: 100%;
   position: fixed;
- top: 0;
+  top: 0;
   z-index: 2;
   &__top{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
-
   }
   &__logo{
     position: absolute;

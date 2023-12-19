@@ -47,8 +47,12 @@
     border: 1px solid var(--Text-color-Captions, #A7AED2);
 }
 
-
-
+.register{
+    a{
+        text-decoration: none;
+        list-style: none;
+    }
+}
 
 .reg__three {
     display: flex;
