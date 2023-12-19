@@ -11,15 +11,16 @@ import {Link} from "react-router-dom"
 
 const Header = () => {
     const [logosearch,setLogosearch] = useState('')
-   let [scr,setScr] = useState(false)
+    let [scr,setScr] = useState(false)
 
-useEffect(()=>{
-if(typeof window!=='undefined'){
-window.addEventListener('scroll',()=>{
-setScr(window.pageYOffset>150)
-})
-}
-},[])
+
+    useEffect(()=>{
+    if(typeof window!=='undefined'){
+    window.addEventListener('scroll',()=>{
+    setScr(window.pageYOffset>40)
+    })
+    }
+    },[])
 
 
     return (
@@ -34,7 +35,7 @@ setScr(window.pageYOffset>150)
                         </div>
                     </div>
                     <div className="header__center">
-                        <input onChange={(e)=>setLogosearch(e.target.value)} type="text" placeholder='поиск товаров'/>
+                        <input onChange={(e)=>setLogosearch(e.target.value)} type="text" placeholder='Поиск товаров'/>
                         {
                             logosearch === ''? <img className='header__logo' src={search} alt=""/>:''
                         }
@@ -53,7 +54,9 @@ setScr(window.pageYOffset>150)
                         <Link to='/sign'><button>Войти</button></Link>
                     </div>
                 </div>
-                <div className="header__line"></div>
+                <div className='header__line'>
+
+                </div>
                 <div className="header__bottom">
                     <div className="header__nav">
                         <ul>
