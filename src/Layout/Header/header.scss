@@ -12,8 +12,8 @@
   }
   &__logo{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 30%;
+    left: 27%;
   }
   &__left{
     display: flex;
@@ -160,9 +160,18 @@
       line-height: normal;
     }
   }
-
 }
 .header.scrolled{
-  background: #80808090;
+  .header__line{
+    display: none;
+  }
+  .header__bottom{
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+  .header__top{
+    margin-top: 10px;
+  }
+  background: rgb(255, 255, 255, 0.93);
   color: white;
 }
