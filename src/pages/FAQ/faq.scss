@@ -1,7 +1,7 @@
 .faq{
   &__box {
     display: flex;
-    padding-top: 100px;
+    padding-top: 250px;
   }
   &__left{
     h2{
@@ -49,6 +49,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 30px;
     h3{
       color: #000;
       font-size: 20px;
@@ -58,13 +59,22 @@
       padding-top: 25px;
     }
   }
-  &__line{
-    width: 780px;
-    height: 2px;
-    flex-shrink: 0;
-    background: var(--Divider-Light-Gray, #F0F0F0);
-    margin-top: 25px;
+  &__typografia{
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+  &__opisanie{
+    color: #303030;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    padding-bottom: 30px;
   }
 }
+
 
 

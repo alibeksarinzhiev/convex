@@ -3,6 +3,11 @@
   position: fixed;
   top: 0;
   z-index: 2;
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+  }
 
   &__top{
     display: flex;
@@ -136,6 +141,7 @@
     flex-shrink: 0;
     border-radius: 10px;
     background: #46C578;
+
     button{
       width: 34px;
       height: 34px;

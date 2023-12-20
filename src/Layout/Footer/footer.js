@@ -25,10 +25,10 @@ const Footer = () => {
                     <div className="footer__nav">
                         <ul>
                             <Link onClick={()=>toTop()} to='/about'>О компании</Link>
-                            <Link to='/faq'>Вопрос-Ответ</Link>
-                            <Link to='/news'>Новости</Link>
-                            <Link to='/contacts'>Контакты</Link>
-                            <Link to='/balance'>Пополнение баланса</Link>
+                            <Link onClick={()=>toTop()} to='/faq'>Вопрос-Ответ</Link>
+                            <Link onClick={()=>toTop()} to='/news'>Новости</Link>
+                            <Link onClick={()=>toTop()} to='/contacts'>Контакты</Link>
+                            <Link onClick={()=>toTop()} to='/balance'>Пополнение баланса</Link>
                         </ul>
                     </div>
                     <div className="footer__contact">
