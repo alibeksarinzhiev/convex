@@ -6,8 +6,11 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import drop from '../../img/arrow_to_down.png'
 import vid from './image/image 13.png'
+import Modal from "./Modal/modal";
+import {set} from "react-hook-form";
 
 const Faq = () => {
+    const [modalActive, setModalActive] = useState(false)
 
     return (
         <section className='faq'>
@@ -19,7 +22,7 @@ const Faq = () => {
                         <h3>Отправить посылку от родных
                             в учреждение</h3>
                         <h3>Вопросы по работе с сайтом</h3>
-                        <button>Задать вопрос</button>
+                        <button onClick={() => setModalActive(true)}>Задать вопрос</button>
                     </div>
 
                     <div className="faq__right">
@@ -118,7 +121,7 @@ const Faq = () => {
                     </div>
                 </div>
             </div>
-
+            <Modal active={modalActive} setActive={setModalActive}/>
         </section>
     );
 };
