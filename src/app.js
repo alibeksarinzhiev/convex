@@ -43,7 +43,6 @@ const App = () => {
                  <Route path={'/order'} element={<Order/>}/>
                  <Route path={'/payment'} element={<Payment/>}/>
 
-
              </Route>
              <Route path={'/sign'} element={<Sign/>}/>
              <Route path={'*'} element={<Notfound/>}/>
