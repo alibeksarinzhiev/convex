@@ -14,6 +14,9 @@ import Sign from "./pages/Sign in/sign";
 import Product from "./pages/Product/product";
 import Notfound from "./pages/notfound/notfound";
 import Register from "./pages/Register/register";
+import Basket from "./pages/Basket/basket";
+import Order from "./pages/Basket/Order/order";
+import Payment from "./pages/Basket/Payment/payment";
 
 
 const App = () => {
@@ -35,6 +38,10 @@ const App = () => {
                  <Route path={'/search'} element={<Search/>}/>
                  <Route path={'/about'} element={<About/>}/>
                  <Route path={'/faq'} element={<Faq/>}/>
+                 <Route path={'/basket'} element={<Basket/>}/>
+                 <Route path={'/order'} element={<Order/>}/>
+                 <Route path={'/payment'} element={<Payment/>}/>
+
              </Route>
              <Route path={'/sign'} element={<Sign/>}/>
              <Route path={'*'} element={<Notfound/>}/>

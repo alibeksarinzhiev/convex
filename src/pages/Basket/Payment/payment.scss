@@ -1,0 +1,82 @@
+.payment{
+  padding-top: 250px;
+  &__box{
+    text-align: center;
+    h1{
+      color: #303030;
+      font-size: 42px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    button{
+      display: flex;
+      width: 380px;
+      height: 50px;
+      padding: 14px 0px;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      border-radius: 10px;
+      border: 1.5px solid #46C578;
+      background: #46C578;
+      color: #FFF;
+      text-align: center;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+  &__stroka{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+    padding-top: 40px;
+  }
+  &__bank{
+    width: 240px;
+    height: 180px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid var(--Text-color-Captions, #A7AED2);
+    padding-top: 50px;
+    img{
+      width: 70px;
+      height: 50px;
+    }
+    p{
+      color: #303030;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+  }
+  &__button{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+      button{
+        display: flex;
+        width: 380px;
+        height: 50px;
+        padding: 14px 0px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        border-radius: 10px;
+        border: 1.5px solid #46C578;
+        background: #46C578;
+        color: #FFF;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 70px;
+      }
+  }
+}

@@ -86,14 +86,14 @@ const Header = () => {
                             <li>Еще <img src={green_li} alt=""/></li>
                         </ul>
                     </div>
-                    <div className="header__basket">
+                    <Link to='/basket'><div className="header__basket">
                         <img src={basket} alt=""/>
                         <div className="header__basket_text">
                             <h4>Корзина</h4>
                             <p>2 400 г.</p>
                         </div>
                         <button>12</button>
-                    </div>
+                    </div></Link>
                 </div>
             </div>
         </header>

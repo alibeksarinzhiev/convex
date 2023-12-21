@@ -1,0 +1,201 @@
+.basket{
+  &__box{
+    display: flex;
+    padding-top: 250px;
+  }
+  &__bas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2{
+      color: #303030;
+      font-size: 42px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+    p{
+      color: #ABABAB;
+      text-align: right;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+    }
+  }
+  &__product{
+    display: flex;
+    padding-top: 40px;
+    img{
+      width: 80px;
+      height: 65px;
+      flex-shrink: 0;
+      padding-right: 18px;
+    }
+  }
+  &__name{
+    h4{
+      color: #303030;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      width: 280px;
+    }
+    p{
+      color: #ABABAB;
+      text-align: left;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+      padding-top: 10px;
+    }
+  }
+  &__kolichestvo{
+    display: flex;
+    justify-content: space-between;
+    width: 127px;
+    height: 40px;
+    flex-shrink: 0;
+    color: #303030;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 36px;
+    p{
+      font-size: 30px;
+    }
+  }
+  &__price{
+    padding-left: 58px;
+    h3{
+      color: #303030;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding-bottom: 26px;
+      padding-right: 44px;
+    }
+    p{
+      color: #ABABAB;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+    }
+  }
+  &__Line{
+    width: 738px;
+    height: 1px;
+    background: #F0F0F0;
+    margin-top: 40px;
+  }
+  &__right{
+    padding-left: 65px;
+    margin-top: 40px;
+  }
+  &__zakaz{
+    button{
+      display: inline-flex;
+      padding: 18px 98px;
+      justify-content: center;
+      align-items: center;border-radius: 10px;
+      border: 1.5px solid #46C578;
+      background: #46C578;
+      color: #FFF;
+      text-align: center;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+  &__promokod{
+    padding-top: 10px;
+    padding-bottom: 16px;
+    button{
+      display: inline-flex;
+      padding: 18px 62px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      border: 1.5px solid #46C578;
+      color: var(--Main-Color-Green, #46C578);
+      text-align: center;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+
+    }
+  }
+  &__summa{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    h4{
+      color: var(--Text-color-Body, #73798C);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 100%;
+    }
+    p{
+      color: var(--Text-color-Body, #73798C);
+      text-align: right;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 100%;
+    }
+  }
+  &__itogo{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    p{
+      color: #303030;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%;
+    }
+    h3{
+       color: #303030;
+       text-align: right;
+       font-size: 24px;
+       font-style: normal;
+       font-weight: 700;
+       line-height: 100%;
+     }
+  }
+  &__bottom{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3{
+      color: #303030;
+      font-size: 42px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    p{
+      color: #46C578;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+  &__cart{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+}
