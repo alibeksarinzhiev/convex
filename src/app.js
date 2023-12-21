@@ -17,6 +17,7 @@ import Register from "./pages/Register/register";
 import Basket from "./pages/Basket/basket";
 import Order from "./pages/Basket/Order/order";
 import Payment from "./pages/Basket/Payment/payment";
+import VegetablesAndFruits from "./pages/VegetablesAndFruits/VegetablesAndFruits";
 
 
 const App = () => {
@@ -42,10 +43,12 @@ const App = () => {
                  <Route path={'/order'} element={<Order/>}/>
                  <Route path={'/payment'} element={<Payment/>}/>
 
+
              </Route>
              <Route path={'/sign'} element={<Sign/>}/>
              <Route path={'*'} element={<Notfound/>}/>
              <Route path={'/register'} element={<Register/>}/>
+             <Route path={'/vegetablesandfruits'} element={<VegetablesAndFruits/>}/>
          </Routes>
         </>
     );

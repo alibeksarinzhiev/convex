@@ -1,0 +1,26 @@
+.vegetables{
+  background: url("1660807177_1-kartinkin-net-p-derevyannii-fon-s-polkami-krasivo-1.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  h1{
+    text-align: center;
+    font-size: 70px;
+    padding-top: 40px;
+    color: saddlebrown;
+  }
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    img{
+      width: 150px;
+    }
+    h2{
+      font-size: 30px;
+      font-weight: 800;
+      color: saddlebrown;
+    }
+  }
+}
