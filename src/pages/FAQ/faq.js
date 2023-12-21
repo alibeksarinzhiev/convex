@@ -7,10 +7,10 @@ import Typography from '@mui/material/Typography';
 import drop from '../../img/arrow_to_down.png'
 import vid from './image/image 13.png'
 import Modal from "./Modal/modal";
-import {set} from "react-hook-form";
 
 const Faq = () => {
     const [modalActive, setModalActive] = useState(false)
+
 
     return (
         <section className='faq'>
