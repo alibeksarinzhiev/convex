@@ -15,8 +15,6 @@ const Header = () => {
     const [hover,setHover] = useState(false)
 
 
-
-
     useEffect(()=>{
     if(typeof window!=='undefined'){
     window.addEventListener('scroll',()=>{
