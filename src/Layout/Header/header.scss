@@ -115,14 +115,8 @@
       line-height: normal;
     }
     li:hover{
-      background: grey;
-    }
-    li:last-child{
-      color: var(--main-color-green, #46C578);
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
+      background: #7bc37c;
+      color: white;
     }
   }
   &__bottom{
@@ -186,9 +180,12 @@
   color: white;
 }
 .dropdown__content{
+  width: 240px;
+  height: 120px;
+  row-gap: 10px;
+  margin-top: -20px;
   display: none;
   position: absolute;
-  right: -20px;
   top: 40px;
   background-color: #f9f9f9;
   min-width: 160px;
@@ -196,8 +193,8 @@
   z-index: 1;
 }
 .dropdown{
+  height: 20px;
   position: relative;
-  padding-bottom: 40px;
 }
 .dropdown:hover .dropdown__content{
 display: block;
@@ -208,4 +205,8 @@ display: block;
   text-decoration: none;
   display: block;
 }
+.dropdown-content p{
+  margin-top: 15px;
+}
+
 .dropdown:hover .dropdown-content {display: block;}

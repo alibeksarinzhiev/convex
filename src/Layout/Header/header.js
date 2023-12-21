@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import './header.scss'
 import logo from '../../img/logo.png'
 import local__img from '../../img/Location.png'
@@ -7,13 +7,15 @@ import green_li from '../../img/chevron_down.png'
 import basket from '../../img/basket.png'
 import search from './Search.svg'
 import {Link} from "react-router-dom"
+import {CustomContext} from "../../Context";
 
 
 const Header = () => {
+    const {user} = useContext(CustomContext)
+
     const [logosearch,setLogosearch] = useState('')
     let [scr,setScr] = useState(false)
     const [hover,setHover] = useState(false)
-
 
     useEffect(()=>{
     if(typeof window!=='undefined'){
@@ -74,18 +76,21 @@ const Header = () => {
                                         Еда быстрого приготовления <img src={lishki} alt=""/>
                                      </span>
                                 <div className="dropdown__content">
-                                    <a href="">Овощи и фрукты</a>
-                                    <a href="">Молочные продукты</a>
-                                    <a href="">Бакалея</a>
+                                    <a href=""><p>Овощи и фрукты</p></a>
+                                    <a href=""><p>Молочные продукты</p></a>
+                                    <a href=""><p>Бакалея</p></a>
                                 </div>
                             </li>
                             <li>Консервы <img src={lishki} alt=""/></li>
                             <li>Напитки <img src={lishki} alt=""/></li>
                             <li>Бытовая химия <img src={lishki} alt=""/></li>
                             <li>Уход за собой <img src={lishki} alt=""/></li>
-                            <li>Еще <img src={green_li} alt=""/></li>
+
                         </ul>
                     </div>
+
+                    {user.name}
+
                     <Link to='/basket'><div className="header__basket">
                         <img src={basket} alt=""/>
                         <div className="header__basket_text">
