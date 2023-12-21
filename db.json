@@ -134,6 +134,29 @@
     }
   ],
   "users": [
-
+    {
+      "email": "alibek@mail.ru",
+      "password": "$2a$10$zTcIJbRAMBxy76ZVjeBbMu55d6u4FNadCfpS.FmCUxsxOwERdrZkG",
+      "name": "alibek",
+      "surname": "sarizn",
+      "phone": "1234567890",
+      "id": 1
+    }
+  ],
+  "reviews": [
+    {
+      "fio": "qwerty",
+      "number": "123456789",
+      "email": "alibek@mail.ru",
+      "message": "qwertyudfghjkl",
+      "id": 1
+    },
+    {
+      "fio": "Сарижниев Алибек",
+      "number": "555555554",
+      "email": "alibek1024@mail.ru",
+      "message": "все было круто!",
+      "id": 2
+    }
   ]
 }

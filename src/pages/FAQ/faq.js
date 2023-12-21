@@ -8,18 +8,28 @@ import drop from '../../img/arrow_to_down.png'
 import vid from './image/image 13.png'
 
 const Faq = () => {
+    const [modal,setModal] = useState(false)
+
+    const handleModal = ()=>{
+        setModal(!modal)
+    }
 
     return (
         <section className='faq'>
             <div className="container">
                 <div className="faq__box">
+                    <div className={`${modal?'faq__modal':'faq__not'}`}>
+                        <h2>Напиши нам</h2>
+                        <input type="text" placeholder={'введите имя'}/>
+                        <textarea placeholder={'Сообщение'} name="" id="" cols="30" rows="10"></textarea>
+                    </div>
                     <div className="faq__left">
                         <h2>Вопрос-ответ</h2>
                         <h3>Часто задаваемые вопросы</h3>
                         <h3>Отправить посылку от родных
                             в учреждение</h3>
                         <h3>Вопросы по работе с сайтом</h3>
-                        <button>Задать вопрос</button>
+                        <button onClick={handleModal}>Задать вопрос</button>
                     </div>
 
                     <div className="faq__right">
@@ -118,7 +128,6 @@ const Faq = () => {
                     </div>
                 </div>
             </div>
-
         </section>
     );
 };

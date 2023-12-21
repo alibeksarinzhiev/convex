@@ -66,7 +66,7 @@ const Register = () => {
                         </div>
                         <div className="register__phone">
                             <h4>Номер телефона</h4>
-                            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  placeholder='Введите ваш номер телефона'/>
+                            <input type="tel"   placeholder='Введите ваш номер телефона'/>
                         </div>
                         <div className="register__five">
                             <p>Пароль</p>
@@ -76,20 +76,21 @@ const Register = () => {
                             <input type="checkbox"/>
                             <p>Запомнить меня</p>
                         </div>
+                        <div className="register__eight">
+                            <div className="register__log">
+                                <button>Зарегестрироваться</button>
+                            </div>
+                            <p>или</p>
+                            <div className="register__out">
+                                <Link to='/sign'>
+                                    <button>У меня уже есть аккаунт</button>
+                                </Link>
+                            </div>
+                        </div>
                     </form>
 
 
-                    <div className="register__eight">
-                        <div className="register__log">
-                            <button>Зарегестрироваться</button>
-                        </div>
-                        <p>или</p>
-                        <div className="register__out">
-                            <Link to='/sign'>
-                                <button>У меня уже есть аккаунт</button>
-                            </Link>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </section>

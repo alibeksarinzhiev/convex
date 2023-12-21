@@ -1,9 +1,30 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './contacts.scss'
 import img from '../../img/icons8-телефон-48.png'
 import ima from '../../img/Group 3.png'
+import {useForm} from "react-hook-form";
+import axios from "axios";
 
 const Contacts = () => {
+    const [userMes,setUserMes] = useState([])
+
+    useEffect(()=>{
+        axios('http://localhost:8080/reviews')
+            .then(({data})=>setUserMes(data))
+
+    },[])
+    const  {
+            register,
+            handleSubmit,
+            formState:{error}
+    } = useForm()
+
+    const message = (data)=>{
+        axios.post('http://localhost:8080/reviews',data)
+
+    }
+
+
     return (
         <section className='contacts'>
             <div className="container">
@@ -28,23 +49,23 @@ const Contacts = () => {
                         </div>
                     </div>
 
-                    <div className="contacts__right">
+                    <form onSubmit={(handleSubmit(message))} className="contacts__right">
                         <h2>Форма обратной связи</h2>
                         <div className="contacts__name">
                             <h3>Фамилия и имя*</h3>
-                            <input type="text" placeholder='Введите вашу фамилию и имя'/>
+                            <input {...register("fio")} type="text" placeholder='Введите вашу фамилию и имя'/>
                         </div>
                         <div className="contacts__numb">
                             <h3>Телефон*</h3>
-                            <input type="number" placeholder='Введите ваш номер телефона'/>
+                            <input {...register('number')} type="number" placeholder='Введите ваш номер телефона'/>
                         </div>
                         <div className="contacts__login">
                             <h3>Email*</h3>
-                            <input type="email" placeholder='Введите вашу почту'/>
+                            <input {...register('email')} type="email" placeholder='Введите вашу почту'/>
                         </div>
                         <div className="contacts__sms">
                             <h3>Ваше сообщение*</h3>
-                            <input type="text" placeholder='Напишите нам'/>
+                            <input {...register('message')} type="text" placeholder='Напишите нам'/>
                         </div>
                         <div className="contacts__ic">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -57,7 +78,15 @@ const Contacts = () => {
                             <h3>Отмена</h3>
                         </div>
 
-                    </div>
+                    </form>
+                </div>
+                <div className="contacts__usermessage">
+                    {userMes.map((el)=>(
+                        <div className='contacts__one'>
+                            <h2>{el.fio}</h2>
+                            <p>{el.message}</p>
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>
