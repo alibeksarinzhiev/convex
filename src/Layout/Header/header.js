@@ -66,9 +66,11 @@ const Header = () => {
                             <li className='dropdown'>
                                 <span>Продукты <img src={lishki} alt=""/></span>
                                 <div className="dropdown__content">
-                                    <a href="">Овощи и фрукты</a>
-                                    <a href="">Молочные продукты</a>
-                                    <a href="">Бакалея</a>
+                                    <Link to='/vegetablesandfruits'><p>Овощи и фрукты</p></Link>
+                                    <div className="dropdown__Line"></div>
+                                    <a href=""><p>Молочные продукты</p></a>
+                                    <div className="dropdown__Line"></div>
+                                    <a href=""><p>Бакалея</p></a>
                                 </div>
                             </li>
                             <li className='dropdown'>
@@ -76,15 +78,61 @@ const Header = () => {
                                         Еда быстрого приготовления <img src={lishki} alt=""/>
                                      </span>
                                 <div className="dropdown__content">
-                                    <a href=""><p>Овощи и фрукты</p></a>
-                                    <a href=""><p>Молочные продукты</p></a>
-                                    <a href=""><p>Бакалея</p></a>
+                                    <a href=""><p>Пельмени</p></a>
+                                    <div className="dropdown__Line"></div>
+                                    <a href=""><p>Сэндвичи</p></a>
+                                    <div className="dropdown__Line"></div>
+                                    <a href=""><p>Хлопья</p></a>
                                 </div>
                             </li>
-                            <li>Консервы <img src={lishki} alt=""/></li>
-                            <li>Напитки <img src={lishki} alt=""/></li>
-                            <li>Бытовая химия <img src={lishki} alt=""/></li>
-                            <li>Уход за собой <img src={lishki} alt=""/></li>
+                            <li className='dropdown'>
+                                <span>
+                                        Консервы <img src={lishki} alt=""/>
+                                     </span>
+                                <div className="dropdown__content">
+                                    <a href=""><p>Овощные</p></a>
+                                    <div className="dropdown__Line"></div>
+                                    <a href=""><p>Мясные</p></a>
+                                    <div className="dropdown__Line"></div>
+                                    <a href=""><p>Рыбные</p></a>
+                                </div>
+                            </li>
+                            <li className='dropdown'>
+                                <span>
+                                        Напитки <img src={lishki} alt=""/>
+                                     </span>
+                                <div className="dropdown__content">
+                                    <a href=""><p>Газированные</p></a>
+                                    <div className="dropdown__Line"></div>
+                                    <a href=""><p>Натуральные</p></a>
+                                    <div className="dropdown__Line"></div>
+                                    <a href=""><p>Алкогольные</p></a>
+                                </div>
+                            </li>
+                            <li className='dropdown'>
+                                <span>
+                                        Бытовая химия <img src={lishki} alt=""/>
+                                     </span>
+                                <div className="dropdown__content">
+                                    <a href=""><p>Моющие средства</p></a>
+                                    <div className="dropdown__Line"></div>
+                                    <a href=""><p>Освежители и ароматизаторы</p></a>
+                                    <div className="dropdown__Line"></div>
+                                    <a href=""><p>Средтва для чистки</p></a>
+                                </div>
+                            </li>
+                            <li className='dropdown'>
+                                <span>
+                                        Уход за собой <img src={lishki} alt=""/>
+                                     </span>
+                                <div className="dropdown__content">
+                                    <a href=""><p>Мужские</p></a>
+                                    <div className="dropdown__Line"></div>
+                                    <a href=""><p>Женские</p></a>
+                                    <div className="dropdown__Line"></div>
+                                    <a href=""><p>Детские</p></a>
+                                </div>
+                            </li>
 
                         </ul>
                     </div>
