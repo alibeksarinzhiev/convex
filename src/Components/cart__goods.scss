@@ -1,6 +1,6 @@
 .cart__goods{
-  width: 250px;
-  height: 350px;
+  width: 270px;
+  height: 400px;
   background: #22cf5944;
   text-align: center;
   border-radius: 12px;
@@ -22,6 +22,15 @@
     font-weight: 700;
   }
   p{
+    font-size: 20px;
+  }
+  button{
+    width: 200px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background: #46c578;
+    color: white;
     font-size: 20px;
   }
 }

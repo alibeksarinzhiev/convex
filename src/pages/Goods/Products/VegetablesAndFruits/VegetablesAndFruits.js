@@ -8,6 +8,7 @@ const VegetablesAndFruits = () => {
             <div className="container">
                 <div className="vegetables__box">
                     <h1>Овощи и фрукты</h1>
+                    <div className="vegetables__Line"></div>
                     <div className="vegetables__stroka">
                         <CartGoods/>
                         <CartGoods/>

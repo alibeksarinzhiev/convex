@@ -68,9 +68,9 @@ const Header = () => {
                                 <div className="dropdown__content">
                                     <Link to='/vegetablesandfruits'><p>Овощи и фрукты</p></Link>
                                     <div className="dropdown__Line"></div>
-                                    <a href=""><p>Молочные продукты</p></a>
+                                    <Link to='/dairy'><p>Молочные продукты</p> </Link>
                                     <div className="dropdown__Line"></div>
-                                    <a href=""><p>Бакалея</p></a>
+                                    <Link to='/grocery'><p>Бакалея</p></Link>
                                 </div>
                             </li>
                             <li className='dropdown'>

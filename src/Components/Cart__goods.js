@@ -9,6 +9,7 @@ const CartGoods = () => {
             <img src={img} alt=""/>
             <h3>300 сом</h3>
             <p>1 килограмм</p>
+            <button>В корзину</button>
         </div>
     );
 };
