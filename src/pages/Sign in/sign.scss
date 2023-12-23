@@ -21,10 +21,14 @@
   }
 }
 .sign{
+  a{
+    text-decoration: none;
+    list-style: none;
+  }
   &__dis{
     display: flex;
     align-items: center;
-    padding-top: 146px;
+    padding-top: 50px;
     flex-direction: column;
   }
   &__vhod{
@@ -54,7 +58,7 @@
       font-style: normal;
       font-weight: 300;
       line-height: 100%;
-      margin-top: 15px;
+      margin: 15px 15px 0 0;
       padding-left: 5px;
     }
   }
@@ -88,9 +92,10 @@
     justify-content: center;
     padding-top: 30px;
     text-align: center;
+    margin-bottom: 50px;
   }
-  &__voi{
-    button1{
+  &__log{
+    button{
       display: flex;
       width: 380px;
       height: 50px;
@@ -108,6 +113,9 @@
       font-weight: 500;
       line-height: normal;
     }
+  }
+  &__voi{
+
     p{
       color: #303030;
       font-size: 14px;

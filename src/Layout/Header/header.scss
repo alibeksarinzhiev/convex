@@ -1,15 +1,32 @@
 .header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+  }
+  &__nameUser{
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+  }
+  &__acc{
+    height: 30px;
+    width: 30px;
+  }
   &__top{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
-
   }
   &__logo{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 30%;
+    left: 27%;
   }
   &__left{
     display: flex;
@@ -104,12 +121,9 @@
       font-weight: 500;
       line-height: normal;
     }
-    li:last-child{
-      color: var(--main-color-green, #46C578);
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
+    li:hover{
+      background: #46c578;
+      color: white;
     }
   }
   &__bottom{
@@ -128,6 +142,7 @@
     flex-shrink: 0;
     border-radius: 10px;
     background: #46C578;
+
     button{
       width: 34px;
       height: 34px;
@@ -156,5 +171,58 @@
       line-height: normal;
     }
   }
+}
+.header.scrolled{
+  .header__line{
+    display: none;
+  }
+  .header__bottom{
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+  .header__top{
+    margin-top: 10px;
+  }
+  background: rgb(255, 255, 255, 0.93);
+  color: white;
+  .header__nameUser{
+    color: black;
+  }
+}
+.dropdown__content{
+  width: 250px;
+  height: 150px;
+  row-gap: 30px;
+  margin-top: -20px;
+  display: none;
+  position: absolute;
+  top: 40px;
+  background-color: #46c578;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+  z-index: 1;
+  p{
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 20px;
+    color: white;
+  }
 
 }
+.dropdown{
+  height: 20px;
+  position: relative;
+}
+.dropdown:hover .dropdown__content{
+display: block;
+}
+.dropdown__Line{
+  width: 230px;
+  height: 1.5px;
+  background: #74D69A;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+
+.dropdown:hover .dropdown-content {display: block;}

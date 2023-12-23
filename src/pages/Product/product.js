@@ -1,20 +1,28 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './product.scss'
-import img from '../../img/image 3.png'
+import {useLocation} from "react-router-dom";
+import axios from "axios";
 
 const Product = () => {
+    const [oneProduct,setOneProduct] = useState({});
+    const id = useLocation().pathname.split('/').at(-1);
+    useEffect(()=>{
+        axios(`http://localhost:8080/product_convex/${id}`)
+            .then(({data})=>setOneProduct(data))
+    },[]);
+
     return (
-        <div>
+        <div className='product__top'>
             <div className="container">
                 <p className="way">Главная / Еда / Консервы / Говядина тушеная Улан высший сорт </p>
                 <div className="tusha">
-                    <img src={img} alt=""/>
+                    <img src={'../../../' + oneProduct.image} alt=""/>
                     <div className="about">
                         <h2>
-                            Говядина тушеная Улан в/с
+                            {oneProduct.title}
                         </h2>
                         <div className="h2o">
-                            <h3>750 Сом</h3>
+                            <h3>{oneProduct.price} Сом/кг</h3>
                             <h4>1700 Сом</h4>
                         </div>
                         <div className="weight">
@@ -25,13 +33,11 @@ const Product = () => {
                             <p>Товар доступен:</p>
                             <h6> 11 шт.</h6>
                         </div>
-                        <button>
+                        <button className='product__VBaskec'>
                             В корзину
                         </button>
                         <p className="aboutproduct">
-                            Продукт имеет высокие сроки хранения,
-                            а также не требует дополнительных условий при хранении.
-                            Кроме того, эта тушенка состоит исключительно из натуральных ингредиентов.
+                            {oneProduct.description}
                         </p>
                     </div>
                 </div>
