@@ -4,12 +4,13 @@ import {useLocation} from "react-router-dom";
 import axios from "axios";
 
 const Product = () => {
-    const [oneProduct,setOneProduct] = useState({})
-    const id = useLocation().pathname.split('/').at(-1)
+    const [oneProduct,setOneProduct] = useState({});
+    const id = useLocation().pathname.split('/').at(-1);
     useEffect(()=>{
         axios(`http://localhost:8080/product_convex/${id}`)
             .then(({data})=>setOneProduct(data))
-    },[])
+    },[]);
+
     return (
         <div className='product__top'>
             <div className="container">
