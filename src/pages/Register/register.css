@@ -57,7 +57,7 @@
 .reg__three {
     display: flex;
     align-items: center;
-    padding-top: 146px;
+    padding-top: 125px;
     flex-direction: column;
 }
 .reg__fore h1 {
@@ -135,4 +135,6 @@ button1{
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    margin-bottom: 50px;
+
 }
