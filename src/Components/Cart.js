@@ -3,6 +3,7 @@ import './cart.scss'
 import img from "../pages/Search/images/234557-konina_ulan_tushenaya_vysshii_sort_325_g.jpg";
 
 const Cart = () => {
+
     return (
         <div className="product__cart">
             <img src={img} alt=""/>

@@ -11,13 +11,44 @@ export const Context = (props)=>{
     const [status,setStatus] = useState(false)
     const [product,setProduct] = useState([])
     const [basket,setBasket] = useState([])
+    const [dairy,setDairy] = useState([])
+    const [vegetables,setVegetables] = useState([])
+    const [fruits,setFruits] = useState([])
 
     useEffect(()=>{
-        axios('http://localhost:8080/product')
+        axios('http://localhost:8080/product_convex')
             .then(({data})=>{setProduct(data)})
     },[])
 
 
+    const addVegetables = (id)=>{
+        console.log('найден товар с ' + id)
+        const find = vegetables.find(el => el.id === id)
+        setBasket([...basket,find])
+        console.log(basket)
+    }
+    useEffect(()=>{
+        axios('http://localhost:8080/product_convex')
+            .then(({data})=>setVegetables(data.filter((el)=>{
+                return el.category === 'vegetables'
+            })))
+    },[])
+
+
+    const addFruits = (id)=>{
+        console.log('найден товар с ' + id)
+        const find = vegetables.find(el => el.id === id)
+        setBasket([...basket,find])
+        console.log(basket)
+    }
+    useEffect(()=>{
+        axios('http://localhost:8080/product_convex')
+            .then(({data})=>setFruits(
+                data.filter((el)=>{
+                    return el.category === 'fruits'
+                })
+            ))
+    },[])
 
 
     const showPassword = ()=>{
@@ -52,6 +83,12 @@ export const Context = (props)=>{
         setUser,
         status,
         setStatus,
+        dairy,
+        setDairy,
+        vegetables,
+        fruits,
+        addFruits,
+        addVegetables,
         showPassword,
         loginUser,
         logOut,
