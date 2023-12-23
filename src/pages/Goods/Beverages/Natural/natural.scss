@@ -1,0 +1,22 @@
+.natural{
+  margin-top: 250px;
+  text-align: center;
+  h1{
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    color: #46c578;
+  }
+  &__stroka{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__Line{
+    height: 2px;
+    background: #46c578;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}

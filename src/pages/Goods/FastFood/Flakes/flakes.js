@@ -1,15 +1,15 @@
 import React from 'react';
-import './dairy.scss'
+import './flakes.scss'
 import CartGoods from "../../../../Components/Cart__goods";
 import CartStroka from "../../../../Components/cart__stroka";
 
-const Dairy = () => {
+const Flakes = () => {
     return (
-        <div className='dairy'>
+        <div className='flakes'>
             <div className="container">
-                <div className="dairy__box">
-                    <h1>Молочные продукты</h1>
-                    <div className="dairy__Line"></div>
+                <div className="flakes__box">
+                    <h1>Хлопья</h1>
+                    <div className="flakes__Line"></div>
                     <CartStroka/>
                     <CartStroka/>
                     <CartStroka/>
@@ -19,4 +19,4 @@ const Dairy = () => {
     );
 };
 
-export default Dairy;
+export default Flakes;

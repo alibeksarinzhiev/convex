@@ -1,22 +1,23 @@
 import React from 'react';
-import './dairy.scss'
+import './meat.scss'
 import CartGoods from "../../../../Components/Cart__goods";
 import CartStroka from "../../../../Components/cart__stroka";
 
-const Dairy = () => {
+const Meat = () => {
     return (
-        <div className='dairy'>
+        <div className='meat'>
             <div className="container">
-                <div className="dairy__box">
-                    <h1>Молочные продукты</h1>
-                    <div className="dairy__Line"></div>
+                <div className="meat__box">
+                    <h1>Мясные</h1>
+                    <div className="meat__Line"></div>
                     <CartStroka/>
                     <CartStroka/>
                     <CartStroka/>
+
                 </div>
             </div>
         </div>
     );
 };
 
-export default Dairy;
+export default Meat;

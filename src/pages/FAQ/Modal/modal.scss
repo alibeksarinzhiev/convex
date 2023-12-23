@@ -8,10 +8,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: scale(0);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
 }
 .modal.active{
-  transform: scale(1);
+  opacity: 1;
+  pointer-events: all;
 }
 .modal__content{
   padding: 20px;
@@ -19,6 +22,8 @@
   border-radius: 12px;
   height: 600px;
   width: 400px;
+  transform: scale(0.5);
+  transition: 0.4s all;
   h1{
     font-size: 30px;
   }
@@ -51,4 +56,7 @@
     border: none;
     color: white;
   }
+}
+.modal__content.active{
+  transform: scale(1);
 }

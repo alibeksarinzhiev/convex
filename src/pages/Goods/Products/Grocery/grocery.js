@@ -1,6 +1,7 @@
 import React from 'react';
 import './grocery.scss'
 import CartGoods from "../../../../Components/Cart__goods";
+import CartStroka from "../../../../Components/cart__stroka";
 
 const Grocery = () => {
     return (
@@ -9,24 +10,9 @@ const Grocery = () => {
                 <div className="grocery__box">
                 <h1>Бакалея</h1>
                 <div className="grocery__Line"></div>
-                <div className="grocery__stroka">
-                    <CartGoods/>
-                    <CartGoods/>
-                    <CartGoods/>
-                    <CartGoods/>
-                </div>
-                    <div className="grocery__stroka">
-                        <CartGoods/>
-                        <CartGoods/>
-                        <CartGoods/>
-                        <CartGoods/>
-                    </div>
-                    <div className="grocery__stroka">
-                        <CartGoods/>
-                        <CartGoods/>
-                        <CartGoods/>
-                        <CartGoods/>
-                    </div>
+                <CartStroka/>
+                <CartStroka/>
+                <CartStroka/>
                 </div>
             </div>
         </div>
