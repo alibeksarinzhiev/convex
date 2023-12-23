@@ -6,11 +6,13 @@ import krest from "../../img/icons8-крестик-48.png";
 import axios from "axios";
 import {CustomContext} from "../../Context";
 import {useNavigate} from 'react-router-dom'
+import { FaEyeSlash } from "react-icons/fa";
+import { FaEye } from "react-icons/fa";
 
 
 const Register = () => {
     const navigate = useNavigate()
-    const {user,setUser} = useContext(CustomContext)
+    const {setUser,status,showPassword} = useContext(CustomContext)
 
     const registerUser = (e)=>{
         e.preventDefault()
@@ -19,8 +21,7 @@ const Register = () => {
             name:e.target[0].value,
             surname:e.target[1].value,
             email:e.target[2].value,
-            phone:e.target[3].value,
-            password:e.target[4].value
+            password:e.target[3].value
         }
 
         axios.post('http://localhost:8080/register',newUser)
@@ -64,13 +65,15 @@ const Register = () => {
                             <h3>@Email</h3>
                             <input type="email" placeholder='Введите вашу почту'/>
                         </div>
-                        <div className="register__phone">
-                            <h4>Номер телефона</h4>
-                            <input type="tel"   placeholder='Введите ваш номер телефона'/>
-                        </div>
                         <div className="register__five">
                             <p>Пароль</p>
-                            <input type="password" placeholder='Введите пароль'/>
+                            <div className="register__password">
+                                <input type={status?"text":"password"} placeholder='Введите пароль'/>
+                                {status?
+                                    <FaEyeSlash onClick={()=>showPassword()} />:
+                                    <FaEye onClick={()=>showPassword()}/>
+                                }
+                            </div>
                         </div>
                         <div className="register__seven">
                             <input type="checkbox"/>

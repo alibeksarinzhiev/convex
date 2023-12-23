@@ -8,7 +8,15 @@
     color: black;
     font-size: 22px;
   }
-
+  &__nameUser{
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+  }
+  &__acc{
+    height: 30px;
+    width: 30px;
+  }
   &__top{
     display: flex;
     justify-content: space-between;
@@ -177,6 +185,9 @@
   }
   background: rgb(255, 255, 255, 0.93);
   color: white;
+  .header__nameUser{
+    color: black;
+  }
 }
 .dropdown__content{
   width: 250px;
