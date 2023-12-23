@@ -26,7 +26,9 @@ const VegetablesAndFruits = () => {
                         ))}
                         {fruits.map((el)=>(
                             <div>
-                                <img src={el.image} alt=""/>
+                                <Link to={`/product/${el.id}`}>
+                                    <img src={el.image} alt=""/>
+                                </Link>
                                 <h2>{el.title}</h2>
                                 <p>{el.description}</p>
                                 <h3>{el.price} сом/кг</h3>
