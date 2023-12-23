@@ -11,7 +11,7 @@ const Product = () => {
             .then(({data})=>setOneProduct(data))
     },[])
     return (
-        <div>
+        <div className='product__top'>
             <div className="container">
                 <p className="way">Главная / Еда / Консервы / Говядина тушеная Улан высший сорт </p>
                 <div className="tusha">
