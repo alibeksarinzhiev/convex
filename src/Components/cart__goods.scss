@@ -34,3 +34,11 @@
     font-size: 20px;
   }
 }
+.cart__goods:hover{
+  border: 4px solid darkgreen;
+  transform: rotateY(360deg);
+  transition: all 3s;
+ }
+.cart__goods.active{
+  transform: rotateY(0);
+}
