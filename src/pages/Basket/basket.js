@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './basket.scss'
 import product from './image/20454-drazhe_m_m_s_s_molochnym_shokoladom_45_g_.jpg'
 import Cart from "../../Components/Cart";
 import {Link} from "react-router-dom"
+import ModalKod from "./modal__kod";
 
 const Basket = () => {
+    const [modalkodActive, setModalkodActive]= useState(false)
     return (
         <section className='basket'>
             <div className="container">
@@ -90,7 +92,7 @@ const Basket = () => {
                             <Link to='/order'><button>Оформить заказ</button></Link>
                         </div>
                         <div className="basket__promokod">
-                            <button>Использовать промокод</button>
+                            <button onClick={() => setModalkodActive(true)}>Использовать промокод</button>
                         </div>
                         <div className="basket__summa">
                             <h4>Количество единиц:</h4>
@@ -134,6 +136,7 @@ const Basket = () => {
                 </div>
 
             </div>
+            <ModalKod active={modalkodActive} setActive={setModalkodActive}/>
         </section>
     );
 };

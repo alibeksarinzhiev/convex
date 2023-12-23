@@ -4,7 +4,7 @@ import './modal.scss'
 const Modal = ({active, setActive}) => {
     return (
         <div className={active ? "modal active" : "modal"} onClick={() => setActive(false) }>
-            <div className="modal__content" onClick={e => e.stopPropagation()}>
+            <div className={active ? "modal__content active" : "modal__content"} onClick={e => e.stopPropagation()}>
                 <h1>Задать вопрос</h1>
                 <h2>Введите имя</h2>
                 <input type="text" placeholder='Введите имя'/>

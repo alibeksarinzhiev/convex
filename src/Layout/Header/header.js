@@ -78,11 +78,11 @@ const Header = () => {
                                         Еда быстрого приготовления <img src={lishki} alt=""/>
                                      </span>
                                 <div className="dropdown__content">
-                                    <a href=""><p>Пельмени</p></a>
+                                    <Link to='/dumplinks'><p>Пельмени</p> </Link>
                                     <div className="dropdown__Line"></div>
-                                    <a href=""><p>Сэндвичи</p></a>
+                                    <Link to='/sandwich'><p>Сэндвичи</p></Link>
                                     <div className="dropdown__Line"></div>
-                                    <a href=""><p>Хлопья</p></a>
+                                    <Link to='/flakes'><p>Хлопья</p></Link>
                                 </div>
                             </li>
                             <li className='dropdown'>
@@ -90,11 +90,11 @@ const Header = () => {
                                         Консервы <img src={lishki} alt=""/>
                                      </span>
                                 <div className="dropdown__content">
-                                    <a href=""><p>Овощные</p></a>
+                                    <Link to='/vegetable'><p>Овощные</p></Link>
                                     <div className="dropdown__Line"></div>
-                                    <a href=""><p>Мясные</p></a>
+                                    <Link to='/meat'><p>Мясные</p></Link>
                                     <div className="dropdown__Line"></div>
-                                    <a href=""><p>Рыбные</p></a>
+                                    <Link to='/fish'><p>Рыбные</p></Link>
                                 </div>
                             </li>
                             <li className='dropdown'>
@@ -102,11 +102,11 @@ const Header = () => {
                                         Напитки <img src={lishki} alt=""/>
                                      </span>
                                 <div className="dropdown__content">
-                                    <a href=""><p>Газированные</p></a>
+                                    <Link to='/carbonated'><p>Газированные</p></Link>
                                     <div className="dropdown__Line"></div>
-                                    <a href=""><p>Натуральные</p></a>
+                                    <Link to='/natural'><p>Натуральные</p></Link>
                                     <div className="dropdown__Line"></div>
-                                    <a href=""><p>Алкогольные</p></a>
+                                    <Link to='/alkoholik'><p>Алкогольные</p></Link>
                                 </div>
                             </li>
                             <li className='dropdown'>
@@ -114,11 +114,11 @@ const Header = () => {
                                         Бытовая химия <img src={lishki} alt=""/>
                                      </span>
                                 <div className="dropdown__content">
-                                    <a href=""><p>Моющие средства</p></a>
+                                    <Link to='/detergents'><p>Моющие средства</p></Link>
                                     <div className="dropdown__Line"></div>
-                                    <a href=""><p>Освежители и ароматизаторы</p></a>
+                                    <Link to='/freshener'><p>Освежители и ароматизаторы</p></Link>
                                     <div className="dropdown__Line"></div>
-                                    <a href=""><p>Средтва для чистки</p></a>
+                                    <Link to='cleaning'><p>Средтва для чистки</p></Link>
                                 </div>
                             </li>
                             <li className='dropdown'>
@@ -126,11 +126,11 @@ const Header = () => {
                                         Уход за собой <img src={lishki} alt=""/>
                                      </span>
                                 <div className="dropdown__content">
-                                    <a href=""><p>Мужские</p></a>
+                                    <Link to='/man'><p>Мужской</p></Link>
                                     <div className="dropdown__Line"></div>
-                                    <a href=""><p>Женские</p></a>
+                                    <Link to='/woman'><p>Женский</p></Link>
                                     <div className="dropdown__Line"></div>
-                                    <a href=""><p>Детские</p></a>
+                                    <Link to='/children'><p>Детский</p></Link>
                                 </div>
                             </li>
 
