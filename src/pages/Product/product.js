@@ -11,7 +11,7 @@ const Product = () => {
             .then(({data})=>setOneProduct(data))
     },[])
     return (
-        <div>
+        <div className='product__top'>
             <div className="container">
                 <p className="way">Главная / Еда / Консервы / Говядина тушеная Улан высший сорт </p>
                 <div className="tusha">
@@ -21,7 +21,7 @@ const Product = () => {
                             {oneProduct.title}
                         </h2>
                         <div className="h2o">
-                            <h3>750 Сом</h3>
+                            <h3>{oneProduct.price} Сом/кг</h3>
                             <h4>1700 Сом</h4>
                         </div>
                         <div className="weight">
@@ -36,9 +36,7 @@ const Product = () => {
                             В корзину
                         </button>
                         <p className="aboutproduct">
-                            Продукт имеет высокие сроки хранения,
-                            а также не требует дополнительных условий при хранении.
-                            Кроме того, эта тушенка состоит исключительно из натуральных ингредиентов.
+                            {oneProduct.description}
                         </p>
                     </div>
                 </div>
