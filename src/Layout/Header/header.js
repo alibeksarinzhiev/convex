@@ -3,15 +3,15 @@ import './header.scss'
 import logo from '../../img/logo.png'
 import local__img from '../../img/Location.png'
 import lishki from '../../img/arrow_to_down.png'
-import green_li from '../../img/chevron_down.png'
 import basket from '../../img/basket.png'
 import search from './Search.svg'
 import {Link} from "react-router-dom"
 import {CustomContext} from "../../Context";
+import { CiUser } from "react-icons/ci";
 
 
 const Header = () => {
-    const {user} = useContext(CustomContext)
+    const {user,logOut} = useContext(CustomContext)
 
     const [logosearch,setLogosearch] = useState('')
     let [scr,setScr] = useState(false)
@@ -54,7 +54,14 @@ const Header = () => {
                                 <h3>Нур-Султан</h3>
                             </div>
                         </div>
-                        <Link to='/sign'><button>Войти</button></Link>
+
+                        {user.email.length?
+                            <div>
+                                <button onClick={()=>logOut()}>Выйти</button>
+                            </div>
+                            :
+                            <Link to='/sign'><button>Войти</button></Link>
+                        }
                     </div>
                 </div>
                 <div className='header__line'>
@@ -136,8 +143,20 @@ const Header = () => {
 
                         </ul>
                     </div>
+                    <div className='header__nameUser'>
+                        <p>
+                            {user.name}
+                        </p>
+                        <p>
+                            {user.surname}
+                        </p>
+                        {user.email.length?
+                            <CiUser className='header__acc'/>
+                            :
+                            ''
+                        }
 
-                    {user.name}
+                    </div>
 
                     <Link to='/basket'><div className="header__basket">
                         <img src={basket} alt=""/>
