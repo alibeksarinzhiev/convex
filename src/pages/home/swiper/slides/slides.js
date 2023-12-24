@@ -14,7 +14,7 @@ const Slides = () => {
                       < div className="slides__tovar">
                     <motion.div
                         animate={{ rotate: 360 }}
-                        transition={{ from: 70, duration: 1}}
+                        transition={{ from: 80, duration: 1}}
                              className="slides__dishes">
                         <img src={Food} alt=""/>
                         <h2>Горячие блюда</h2>
@@ -22,7 +22,7 @@ const Slides = () => {
                     </motion.div>
                     <motion.div
                         animate={{ rotate: 360 }}
-                        transition={{ from: 70, duration: 1}}
+                        transition={{ from: 80, duration: 1}}
                         className="slides__newItems">
                         <img src={New} alt=""/>
                         <h2>Новинки</h2>
@@ -30,7 +30,7 @@ const Slides = () => {
                     </motion.div>
                     <motion.div
                         animate={{ rotate: 360 }}
-                        transition={{ from: 70, duration: 1}}
+                        transition={{ from: 80, duration: 1}}
                         className="slides__stock">
                         <img src={Stock} alt=""/>
                         <h2>Акции</h2>
@@ -38,7 +38,7 @@ const Slides = () => {
                     </motion.div>
                     <motion.div
                         animate={{ rotate: 360 }}
-                        transition={{ from: 70, duration: 1}}
+                        transition={{ from: 80, duration: 1}}
                         className="slides__kits">
                         <img src={Kits} alt=""/>
                         <h2>Комплекты</h2>
