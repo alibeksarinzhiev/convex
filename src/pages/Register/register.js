@@ -58,7 +58,7 @@ const Register = () => {
                             <input type="text" placeholder='Введите Имя'/>
                         </div>
                         <div className="register__email">
-                            <h3>Фамилию</h3>
+                            <h3>Фамилия</h3>
                             <input type="text" placeholder='Введите Фамилию'/>
                         </div>
                         <div className="register__email">
