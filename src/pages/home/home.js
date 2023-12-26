@@ -11,9 +11,9 @@ const Home = () => {
         <>
             <Swiper/>
             <Slides/>
-            <Action/>
-            <New/>
-            <PopularGoods/>
+            {/*<Action/>*/}
+            {/*<New/>*/}
+            {/*<PopularGoods/>*/}
         </>
     );
 };

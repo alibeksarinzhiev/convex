@@ -7,6 +7,7 @@ export const CustomContext = createContext();
 
 
 export const Context = (props)=>{
+    const [product,setProduct] = useState([])
     const [user,setUser]= useState({email:''})
     const [status,setStatus] = useState(false)
     const [basket,setBasket] = useState([])
@@ -22,6 +23,12 @@ export const Context = (props)=>{
     const [vegetables,setVegetables] = useState([])
     const [fruits,setFruits] = useState([])
     const [actions,setActions] = useState([])
+
+
+    useEffect(()=>{
+        axios('http://localhost:8080/product_convex')
+            .then(({data})=>setProduct(data))
+    },[])
 
 
      const addActions = (id)=>{
@@ -43,7 +50,18 @@ export const Context = (props)=>{
             })))
     },[])
 
+const addBasket = (id)=>{
+    console.log('найден товар с ' + id)
+    const find = product.find(el => el.id === id)
+    const localUser = JSON.parse(localStorage.getItem('user'))
 
+    if (user.email.length<1){
+        alert('сначало войдите в аккаунт чтобы добавлять в корзину')
+    }else {
+        setBasket([...basket, find])
+    }
+    console.log(basket)
+}
 
     const addVegetables = (id)=>{
         console.log('найден товар с ' + id)
@@ -347,7 +365,10 @@ export const Context = (props)=>{
         deleteAll,
         loginUser,
         logOut,
-        login
+        login,
+        product,
+        setProduct,
+        addBasket
     }
     return <CustomContext.Provider value={value}>
         {props.children}
