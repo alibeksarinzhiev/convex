@@ -1,6 +1,9 @@
 .slides{
   margin-top: 20px;
-
+  a{
+    list-style: none;
+    text-decoration: none;
+  }
   &__tovar{
     display: flex;
     justify-content: space-between;

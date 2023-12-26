@@ -4,7 +4,7 @@ import {CustomContext} from "../../../../Context";
 import {Link} from "react-router-dom"
 
 const VegetablesAndFruits = () => {
-    const {vegetables,addVegetables,fruits,addFruits} = useContext(CustomContext)
+    const {vegetables,addVegetables,fruits,addFruits,basket,plusOne,deleteObject} = useContext(CustomContext)
 
 
     return (
@@ -22,6 +22,18 @@ const VegetablesAndFruits = () => {
                                 <h2>{el.title}</h2>
                                 <p>{el.description}</p>
                                 <h3>{el.price} сом/кг</h3>
+                                {basket.find(item => item.id === el.id)
+                                    ?
+                                    <div>
+                                        <button onClick={()=>deleteObject(el.id)}>удалить из корзины</button>
+
+                                        <button onClick={()=>plusOne(el.id)} >+</button>
+
+                                    </div>
+
+                                    :
+                                    <button onClick={() => addVegetables(el.id)}>Добавить в корзину</button>
+                                }
                             </div>
                         ))}
                         {fruits.map((el)=>(

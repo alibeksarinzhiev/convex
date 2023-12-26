@@ -1,4 +1,8 @@
 .action{
+  a{
+    list-style: none;
+    text-decoration: none;
+  }
   &__text{
     display: flex;
     justify-content: space-between;

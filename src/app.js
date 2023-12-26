@@ -35,6 +35,7 @@ import Cleaning from "./pages/Goods/Household/CleaningProducts/cleaning";
 import Man from "./pages/Goods/PersonalCare/Man`s/man";
 import Woman from "./pages/Goods/PersonalCare/Woman`s/woman";
 import Children from "./pages/Goods/PersonalCare/Children`s/children";
+import ActionProducts from "./pages/action_products/action_products";
 
 
 const App = () => {
@@ -54,7 +55,6 @@ const App = () => {
                  <Route path={'/product/:id'} element={<Product/>}/>
                  <Route path={''} element={<Home/>}/>
                  <Route path={'/search'} element={<Search/>}/>
-                 <Route path={'/about'} element={<About/>}/>
                  <Route path={'/faq'} element={<Faq/>}/>
                  <Route path={'/basket'} element={<Basket/>}/>
                  <Route path={'/order'} element={<Order/>}/>
@@ -77,6 +77,7 @@ const App = () => {
                  <Route path={'/man'} element={<Man/>}/>
                  <Route path={'/woman'} element={<Woman/>}/>
                  <Route path={'/children'} element={<Children/>}/>
+                 <Route path={'/action'} element={<ActionProducts/>}/>
              </Route>
              <Route path={'/sign'} element={<Sign/>}/>
              <Route path={'*'} element={<Notfound/>}/>

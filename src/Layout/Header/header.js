@@ -11,7 +11,7 @@ import { CiUser } from "react-icons/ci";
 
 
 const Header = () => {
-    const {user,logOut} = useContext(CustomContext)
+    const {user,logOut,basket} = useContext(CustomContext)
 
     const [logosearch,setLogosearch] = useState('')
     let [scr,setScr] = useState(false)
@@ -164,7 +164,7 @@ const Header = () => {
                             <h4>Корзина</h4>
                             <p>2 400 г.</p>
                         </div>
-                        <button>12</button>
+                        <button>{basket.length}</button>
                     </div></Link>
                 </div>
             </div>

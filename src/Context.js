@@ -9,22 +9,44 @@ export const CustomContext = createContext();
 export const Context = (props)=>{
     const [user,setUser]= useState({email:''})
     const [status,setStatus] = useState(false)
-    const [product,setProduct] = useState([])
     const [basket,setBasket] = useState([])
     const [dairy,setDairy] = useState([])
     const [vegetables,setVegetables] = useState([])
     const [fruits,setFruits] = useState([])
+    const [actions,setActions] = useState([])
 
+
+     const addActions = (id)=>{
+        console.log('найден товар с ' + id)
+        const find = actions.find(el => el.id === id)
+        const localUser = JSON.parse(localStorage.getItem('user'))
+
+        if (user.email.length<1){
+            alert('сначало войдите в аккаунт чтобы добавлять в корзину')
+        }else {
+            setBasket([...basket, find])
+        }
+        console.log(basket)
+    }
     useEffect(()=>{
         axios('http://localhost:8080/product_convex')
-            .then(({data})=>{setProduct(data)})
+            .then(({data})=>setActions(data.filter((el)=>{
+                return el.action === 'true'
+            })))
     },[])
+
 
 
     const addVegetables = (id)=>{
         console.log('найден товар с ' + id)
         const find = vegetables.find(el => el.id === id)
-        setBasket([...basket,find])
+        const localUser = JSON.parse(localStorage.getItem('user'))
+
+        if (user.email.length<1){
+            alert('сначало войдите в аккаунт чтобы добавлять в корзину')
+        }else {
+            setBasket([...basket, find])
+        }
         console.log(basket)
     }
     useEffect(()=>{
@@ -36,9 +58,10 @@ export const Context = (props)=>{
 
 
     const addFruits = (id)=>{
-        console.log('найден товар с ' + id)
-        const find = vegetables.find(el => el.id === id)
-        setBasket([...basket,find])
+        const find = fruits.find (el =>el.id === id)
+
+            setBasket( [...basket,find])
+
         console.log(basket)
     }
     useEffect(()=>{
@@ -76,6 +99,66 @@ export const Context = (props)=>{
     }
 
 
+    const plusOne = (id)=>{
+        const find = basket.find (el =>el.id === id)
+        setBasket(basket.map((el)=>{
+            if (el.id === id){
+                if (el.quantity === 30){
+                    el.quantity = 'max'
+                    return el
+                }
+                else if (el.quantity === 'max'){
+                    return el
+                }
+                else if (el.quantity === 'min'){
+                    el.quantity = 1
+                    return el
+                }
+                return {...el,quantity:el.quantity+ +1}
+            }
+            return el
+        }))
+
+    }
+
+    const minusOne = (id)=>{
+        const find = basket.find (el =>el.id === id)
+        setBasket(basket.map((el)=>{
+            if (el.id === id){
+                if (el.quantity === 1){
+                    el.quantity = 'min'
+                    return el
+                }
+                else if (el.quantity === 'min'){
+                    return el
+                }
+                else if (el.quantity === 'max'){
+                    el.quantity = 30
+                    return el
+                }
+                return {...el,quantity:el.quantity - 1}
+            }
+            return el
+        }))
+
+    }
+
+
+
+    const deleteObject = (id)=>{
+        console.log('найдено' + id)
+        const find = basket.find (el =>el.id === id)
+        setBasket(basket.filter((el)=>{
+            if (el.id !== id){
+                return [...basket,el.id !== find]
+            }
+        }))
+        console.log('удален объект с id ' + id)
+    }
+    const deleteAll = ()=>{
+        setBasket([])
+        console.log(basket)
+    }
 
 
     const value ={
@@ -87,9 +170,17 @@ export const Context = (props)=>{
         setDairy,
         vegetables,
         fruits,
+        basket,
+        actions,
+        setActions,
+        addActions,
         addFruits,
         addVegetables,
         showPassword,
+        plusOne,
+        minusOne,
+        deleteObject,
+        deleteAll,
         loginUser,
         logOut,
         login

@@ -3,6 +3,11 @@
     display: flex;
     padding-top: 250px;
   }
+  &__cart{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
   &__bas{
     display: flex;
     justify-content: space-between;
@@ -193,7 +198,7 @@
       line-height: normal;
     }
   }
-  &__cart{
+  &__action{
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
