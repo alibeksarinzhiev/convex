@@ -13,7 +13,7 @@ const ActionProducts = () => {
             <div className="container">
                 {actions.map((el)=>{
                     <div>
-                        
+
                     </div>
                 })}
 

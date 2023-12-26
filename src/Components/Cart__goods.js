@@ -11,7 +11,7 @@ const CartGoods = () => {
             transition={{ duration: 1 }}
             whileTap={{ scale: 0.9 }}
             className='cart__goods'>
-            <h2 className='name active'>Картофель</h2>
+            <h2>Картофель</h2>
             <img src={img} alt=""/>
             <h3>300 сом</h3>
             <p>1 килограмм</p>
