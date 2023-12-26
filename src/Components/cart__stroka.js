@@ -6,9 +6,6 @@ const CartStroka = () => {
     return (
         <div className="natural__stroka">
             <CartGoods/>
-            <CartGoods/>
-            <CartGoods/>
-            <CartGoods/>
         </div>
     );
 };
