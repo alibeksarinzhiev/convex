@@ -13,7 +13,10 @@ const Grocery = () => {
                 <h1>Бакалея</h1>
                 <div className="grocery__Line"></div>
                     <div className='cart__st'>
-                        {grocery.map((el)=>(
+                        {product.filter((el)=>(
+                            el.category === 'grocery'
+                        ))
+                            .map((el)=>(
                             <Cart el={el}/>
                         ))}
 

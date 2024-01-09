@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 import Cart from "../../Components/Cart";
 
 const ActionProducts = () => {
-    const {actions,addActions,basket,deleteObject,plusOne,product} = useContext(CustomContext)
+    const {basket,deleteObject,plusOne,product} = useContext(CustomContext)
 
 
 

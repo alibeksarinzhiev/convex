@@ -6,7 +6,7 @@ import ModalKod from "./modal__kod";
 import {CustomContext} from "../../Context";
 
 const Basket = () => {
-    const {basket,plusOne,minusOne,deleteObject,deleteAll} = useContext(CustomContext)
+    const {basket,plusOne,minusOne,deleteObject,deleteAll,product} = useContext(CustomContext)
     const [modalkodActive, setModalkodActive]= useState(false)
 
 
@@ -103,10 +103,13 @@ const Basket = () => {
                     <p>Cмотреть все</p>
                 </div>
                 <div className="basket__action">
-                    <Cart/>
-                    <Cart/>
-                    <Cart/>
-                    <Cart/>
+                    {
+                        product.filter((el)=>(
+                            el.action === "true"
+                        ))
+                            .map((el)=>(
+                                <Cart el={el}/>
+                            ))}
                 </div>
 
             </div>

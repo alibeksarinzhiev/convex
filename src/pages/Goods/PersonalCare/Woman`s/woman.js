@@ -1,5 +1,4 @@
 import React from 'react';
-import CartStroka from "../../../../Components/cart__stroka";
 import './woman.scss'
 
 const Woman = () => {
@@ -9,10 +8,7 @@ const Woman = () => {
                 <div className="woman__box">
                     <h1>Женский</h1>
                     <div className="woman__Line"></div>
-                    <CartStroka/>
-                    <CartStroka/>
-                    <CartStroka/>
-                </div>w
+                </div>
             </div>
         </div>
     );

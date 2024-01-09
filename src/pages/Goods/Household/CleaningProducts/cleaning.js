@@ -1,5 +1,4 @@
 import React from 'react';
-import CartStroka from "../../../../Components/cart__stroka";
 import './cleaning.scss'
 
 const Cleaning = () => {
@@ -9,9 +8,7 @@ const Cleaning = () => {
                 <div className="cleaning__box">
                     <h1>Средства для чистки</h1>
                     <div className="cleaning__Line"></div>
-                    <CartStroka/>
-                    <CartStroka/>
-                    <CartStroka/>
+
                 </div>
             </div>
         </div>

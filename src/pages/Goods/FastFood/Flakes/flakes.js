@@ -4,7 +4,7 @@ import {CustomContext} from "../../../../Context";
 import Cart from "../../../../Components/Cart";
 
 const Flakes = () => {
-    const {flakes,addFlakes,product,} = useContext(CustomContext)
+    const {product} = useContext(CustomContext)
 
     return (
         <div className='flakes'>
@@ -13,7 +13,10 @@ const Flakes = () => {
                     <h1>Хлопья</h1>
                     <div className="flakes__Line"></div>
                     <div className='cart__st'>
-                        {flakes.map((el)=>(
+                        {product.filter((el)=>(
+                            el.category === 'flakes'
+                        ))
+                            .map((el)=>(
                             <Cart el={el}/>
                             ))}
 

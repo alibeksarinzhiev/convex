@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 import {CustomContext} from "../Context";
 
 const Cart = ({el}) => {
-    const {vegetables,addVegetables,fruits,addFruits,basket,plusOne,deleteObject,addBasket} = useContext(CustomContext)
+    const {basket,plusOne,minusOne,deleteObject,addBasket} = useContext(CustomContext)
 
 
     return (
@@ -20,6 +20,7 @@ const Cart = ({el}) => {
             {basket.find(item => item.id === el.id)
                 ?
                 <div>
+                    <button onClick={()=>minusOne(el.id)} >-</button>
                     <button onClick={()=>deleteObject(el.id)}>удалить из корзины</button>
                     <button onClick={()=>plusOne(el.id)} >+</button>
                 </div>
